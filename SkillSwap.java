@@ -19,7 +19,7 @@ public class SkillSwap {
     String[][] myArray = {
     {"Henry", "Doe", "Calculus"},
     {"Jane", "Doe", "Biology"},
-    {"Bob", "Smith", "Chemistry"}
+    {"Bob", "Smith", "Chemistry"} 
 };
 
     
