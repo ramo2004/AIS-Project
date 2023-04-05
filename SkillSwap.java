@@ -7,12 +7,19 @@ public class SkillSwap {
     Scanner scnr = new Scanner(System.in);
     
     System.out.println("\nWelcome to SkillSwap!");
-    System.out.print("Enter your full name: ");
+    System.out.print("\nEnter your full name: ");
     
     String firstName = scnr.next();
     String lastName = scnr.next();
     
-    System.out.println("What are you looking to learn today " + );
+    System.out.println("\nWhat are you looking to learn today " + );
+    
+    String userLearns = scnr.next();
+    
+    System.out.print("\nWhat is something you could potentially teach to another person?: ");
+    
+    String userTeaches = scnr.next();
+    
     
   }
   static void otherUserInfo() {
