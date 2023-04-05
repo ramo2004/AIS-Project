@@ -12,16 +12,18 @@ public class SkillSwap {
     String firstName = scnr.next();
     String lastName = scnr.next();
     
-    System.out.print("\nWhat are you looking to learn today " + firstName + "?: ");
-    
-    String userLearns = scnr.next();
-    
-    System.out.print("\nWhat is something you could potentially teach to another person?: ");
-    
-    String userTeaches = scnr.next();
+    System.out.println("What are you looking to learn today " + );
     
   }
-  
-  /* ADD YOUR CODE HERE */
+  static void otherUserInfo() {
+    String[][] myArray = {
+    {"Henry", "Doe", "Calculus"},
+    {"Jane", "Doe", "Biology"},
+    {"Bob", "Smith", "Chemistry"}
+};
+
+    
+    
+  }
   
 }
