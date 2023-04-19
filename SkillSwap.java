@@ -12,11 +12,11 @@ public class SkillSwap {
     String firstName = scnr.next();
     String lastName = scnr.next();
     
-    System.out.print("\nWhat are you looking to learn today " + firstName + "?");
+    System.out.print("\nWhat are you looking to learn today " + firstName + "? ");
     
     String userLearns = scnr.next();
     
-    System.out.print("\nWhat is something you could potentially teach to another person?: ");
+    System.out.print("\nWhat is something you could potentially teach to another person? ");
     
     String userTeaches = scnr.next();
     
@@ -46,16 +46,20 @@ public class SkillSwap {
       }
      }
     
-    for(int i = 0; i < 10; i++){
-      for(int j = 0; j < 4; j++){
-        
-        if(userTeaches.equals(myArray[i][3])){
-          System.out.println("You can teach " + myArray[i][j - 3] + " " + myArray[i][j - 2] + " " + myArray[i][3]);
+    for (int i = 0; i < 10; i++) {
+    for (int j = 1; j < 5; j++) {
+        if (userTeaches.equals(myArray[i][2])) {
+            System.out.println("You can teach " + myArray[i][j-1]);
         }
+    }
+}
+
+
+
       }
      }
     
     
-  }
   
-}
+  
+
