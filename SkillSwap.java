@@ -20,21 +20,42 @@ public class SkillSwap {
     
     String userTeaches = scnr.next();
     
+    System.out.println("Searching...");
+    
     String[][] myArray = {
     
-    {"Henry", "Doe", "Calculus"},
-    {"Jane", "Doe", "Biology"},
-    {"Bob", "Smith", "Chemistry"} 
+    {"Henry", "Doe", "Math", "Spanish"},
+    {"Jane", "Allison", "Biology", "Coding"},
+    {"Bob", "Smith", "Chemistry", "Physics"},
+    {"Mary", "Jane", "English", "Arts"}, 
+    {"Jack", "Ryan", "Math", "Chemistry"},
+    {"Paul", "Peters", "Spanish", "Biology"},
+    {"John", "Cooper", "Arts", "Coding"},
+    {"Bob", "Smith", "Chemistry", "Physics"}, 
+    {"Sarah", "Hannah", "Physics", "English"},
+    {"Courtney", "Garza", "Biology", "Math"}
       
     };
     
-    for(int i = 0; i < 3; i++){
-      for(int j = 0; j < 3; j++){
+    for(int i = 0; i < 10; i++){
+      for(int j = 0; j < 4; j++){
         if(userLearns.equals(myArray[i][j])){
-          System.out.println("You matched with " + myArray[i][j - 2] + " " + myArray[i][j - 1]);
+          System.out.println(myArray[i][j - 2] + " " + myArray[i][j - 1] + " can teach you " + myArray[i][j]);
+        }
+        
+      }
+     }
+    
+    for(int i = 0; i < 10; i++){
+      for(int j = 0; j < 4; j++){
+        
+        if(userTeaches.equals(myArray[i][3])){
+          System.out.println("You can teach " + myArray[i][j - 3] + " " + myArray[i][j - 2] + " " + myArray[i][3]);
         }
       }
      }
+    
+    
   }
   
 }
